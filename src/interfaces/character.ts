@@ -5,5 +5,6 @@ export default interface Character {
     name: string,
     image: string | StaticImageData,
     initiativeRoll: number,
-    initiativeBonus: number
+    initiativeBonus: number,
+    ally: boolean
 }

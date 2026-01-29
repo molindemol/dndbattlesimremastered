@@ -1,0 +1,34 @@
+.root{
+    display: flex;
+    border: 4px solid black;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+.nameImgContainer{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.image{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.numberInputContainer{
+    display: flex;
+    gap: 2rem;
+
+    input{
+        width: 5rem;
+        font-size: large;
+        padding: 0.75rem 0.25rem;
+        text-align: center;
+    }
+}
+

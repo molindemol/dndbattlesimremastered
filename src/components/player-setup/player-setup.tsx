@@ -1,15 +1,14 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 'use client'
 import { ReactNode, useCallback } from "react";
 import css from './player-setup.module.scss'
 import AddPlayerButton from "./add-player-button/add-player-button";
 import AddPlayerCard from "./player-card/add-player-card";
 import { useRouter } from "next/navigation";
-import usePlayers from "@hooks/usePlayers";
+import useCharacters from "@hooks/use-characters";
 
 
 export default function PlayerSetup(): ReactNode{
-    const { players, setPlayers } = usePlayers()
+    const { characters: players, setCharacters: setPlayers } = useCharacters("players")
     const router = useRouter()
 
     const handleClick = useCallback(() => {
