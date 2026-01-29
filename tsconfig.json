@@ -120,6 +120,12 @@
 
                 "./src/utils/*"
 
+            ],
+
+            "@classes/*": [
+
+                "./src/classes"
+
             ]
 
         }
