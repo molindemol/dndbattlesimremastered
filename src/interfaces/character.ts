@@ -4,7 +4,8 @@ export default interface Character {
     id: string;
     name: string,
     image: string | StaticImageData,
-    initiativeRoll: number,
-    initiativeBonus: number,
-    ally: boolean
+    initiativeRoll: number | null,
+    initiativeBonus: number | null,
+    hp?: number
+    ally?: boolean
 }

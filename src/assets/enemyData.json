@@ -1,0 +1,200 @@
+[
+  {
+    "race": "Anchorite of Talos",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/6288/420/140/140/636960342197853332.png",
+    "initiative": 1,
+    "hp": 58
+  },
+  {
+    "race": "Ankheg",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/160/140/140/636252759871343414.jpeg",
+    "initiative": 0,
+    "hp": 39
+  },
+  {
+    "race": "Banshee",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/8/445/140/140/636306384206105958.jpeg",
+    "initiative": 2,
+    "hp": 58
+  },
+  {
+    "race": "Twig Blight",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/16/463/140/140/636376286997146437.jpeg",
+    "initiative": 1,
+    "hp": 4
+  },
+  {
+    "race": "Needle Blight",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/16/459/140/140/636376285135086181.jpeg",
+    "initiative": 1,
+    "hp": 11
+  },
+  {
+    "race": "Vine Blight",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/16/465/140/140/636376287267875128.jpeg",
+    "initiative": -1,
+    "hp": 26
+  },
+  {
+    "race": "Boar",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/43938/951/140/140/638607410434493290.jpeg",
+    "initiative": 0,
+    "hp": 11
+  },
+  {
+    "race": "Carrion Crawler",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/8/803/140/140/636319242379639973.jpeg",
+    "initiative": 1,
+    "hp": 51
+  },
+  {
+    "race": "Commoner",
+    "image": "https://www.dndbeyond.com/attachments/2/656/humanoid.jpg",
+    "initiative": 0,
+    "hp": 4
+  },
+  {
+    "race": "Centaur",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/226/140/140/636252765572797492.jpeg",
+    "initiative": 2,
+    "hp": 45
+  },
+  {
+    "race": "Cow",
+    "image": "https://b1157417.smushcdn.com/1157417/wp-content/uploads/2024/07/cow-close-up-of-dairy-cattle-825x550.jpg?lossy=1&strip=1&webp=0",
+    "initiative": 0,
+    "hp": 15
+  },
+  {
+    "race": "Don-Jon Raskin",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/6290/214/140/140/636960517651594329.png",
+    "initiative": 0,
+    "hp": 44
+  },
+  {
+    "race": "Falcon The Hunter",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/6290/199/140/140/636960516128000099.png",
+    "initiative": 2,
+    "hp": 112
+  },
+  {
+    "race": "Giant Crab",
+    "image": "https://i.ytimg.com/vi/VZIc5jXss-g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmYOZ6oKCJC9r7k-ZzSeAJ8BwHpg",
+    "initiative": 2,
+    "hp": 13
+  },
+  {
+    "race": "Ghoul",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/14/482/140/140/636364323936412737.jpeg",
+    "initiative": 2,
+    "hp": 22
+  },
+  {
+    "race": "Giant Rat",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/16/537/140/140/636376332197484465.jpeg",
+    "initiative": 2,
+    "hp": 7
+  },
+  {
+    "race": "Giant Spider",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/43939/569/140/140/638607426458975567.jpeg",
+    "initiative": 3,
+    "hp": 26
+  },
+  {
+    "race": "Gothok The Thunder Boar",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/6289/894/140/140/636960494069037895.png",
+    "initiative": 0,
+    "hp": 73
+  },
+  {
+    "race": "Harpy",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/390/140/140/636252781955283226.jpeg",
+    "initiative": 1,
+    "hp": 38
+  },
+  {
+    "race": "Invisible Stalker",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/366/140/140/636252779158773590.jpeg",
+    "initiative": 4,
+    "hp": 104
+  },
+  {
+    "race": "Hunter Shark",
+    "image": "https://i.pinimg.com/474x/21/d7/6b/21d76b2686e5b2a299e2f54f15849a8a.jpg",
+    "initiative": 1,
+    "hp": 45
+  },
+  {
+    "race": "Manticore",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/186/140/140/636252762622641747.jpeg",
+    "initiative": 3,
+    "hp": 68
+  },
+  {
+    "race": "Mimic",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/210/140/140/636252764730856081.jpeg",
+    "initiative": 1,
+    "hp": 58
+  },
+  {
+    "race": "Ochre Jelly",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/278/140/140/636252770058098612.jpeg",
+    "initiative": -2,
+    "hp": 45
+  },
+  {
+    "race": "Ogre",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/30834/129/1000/1000/638063882039265538.png",
+    "initiative": -1,
+    "hp": 59
+  },
+  {
+    "race": "Orc",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/0/300/140/140/636252771690760688.jpeg",
+    "initiative": 1,
+    "hp": 15
+  },
+  {
+    "race": "Rock Gnome Recluse",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/6567/231/140/140/636988925949655445.png",
+    "initiative": 0,
+    "hp": 7
+  },
+  {
+    "race": "Riding horse",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/9/904/1000/1000/636334288913250513.jpeg",
+    "initiative": 0,
+    "hp": 13
+  },
+  {
+    "race": "Stirge",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/30835/940/1000/1000/638063924522595508.png",
+    "initiative": 3,
+    "hp": 2
+  },
+  {
+    "race": "Veteran",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ed80871-fac2-4e1b-99bc-a0f5b0d00eac/dgi8dfr-035db929-f21d-4f6a-90c1-30e57252d874.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzllZDgwODcxLWZhYzItNGUxYi05OWJjLWEwZjViMGQwMGVhY1wvZGdpOGRmci0wMzVkYjkyOS1mMjFkLTRmNmEtOTBjMS0zMGU1NzI1MmQ4NzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H1B9UVoovZQmseZk5rB-tYBA7WA9rc0w9CjUBVZA7vY",
+    "initiative": 1,
+    "hp": 58
+  },
+  {
+    "race": "Will-o'-Wisp",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/16/585/1000/1000/636376363763232290.jpeg",
+    "initiative": 9,
+    "hp": 22
+  },
+  {
+    "race": "Wererat",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/30832/404/1000/1000/638063837496982415.png",
+    "initiative": 2,
+    "hp": 33
+  },
+  {
+    "race": "Young white dragon",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/30782/436/1000/1000/638061962314445590.png",
+    "initiative": 0,
+    "hp": 133
+  }
+]

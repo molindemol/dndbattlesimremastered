@@ -12,6 +12,9 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    h1,h2,h3{
+        margin: 0;
+    }
 }
 
 .image{
@@ -24,11 +27,26 @@
     display: flex;
     gap: 2rem;
 
-    input{
-        width: 5rem;
+    input {
+        width: 3rem;
         font-size: large;
-        padding: 0.75rem 0.25rem;
+        padding: 0.5rem 0.25rem;
         text-align: center;
+    }
+
+}
+
+.inputContainer{
+    position: relative;
+    label{
+        font-weight: bold;
+        position: absolute;
+        transform: translateY(-1rem);
+        top: 0;
     }
 }
 
+.remove .imageBin{
+    height: 1.5rem;
+    width: auto;
+}

@@ -1,8 +1,17 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, Dispatch, SetStateAction } from "react";
 import Character from "@interfaces/character";
 
-export default function useCharacters(storageKey : string) {
+export interface UseCharactersHook{
+    characters: Character[];
+    setCharacters: Dispatch<SetStateAction<Character[]>>;
+    addCharacters: (c: Character) => void;
+    removeCharacters: (id: string) => void;
+    updateCharacters: (id: string, changes: Partial<Character>) => void;
+    clearCharacters: () => void;
+}
+
+export default function useCharacters(storageKey : string): UseCharactersHook {
     const [characters, setCharacters] = useState<Character[]>([]);
     const [initialized, setInitialized] = useState(false);
     const skipFirstSave = useRef(true);

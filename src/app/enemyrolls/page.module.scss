@@ -1,0 +1,9 @@
+.root
+{
+    height: 100vh;
+    display: grid;
+    gap: 2rem;
+    padding: 0 2rem;
+    grid-template-columns: 1fr 0.7fr;
+    align-items: center;
+}

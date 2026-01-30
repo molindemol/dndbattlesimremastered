@@ -8,7 +8,7 @@ import useCharacters from "@hooks/use-characters";
 
 
 export default function PlayerSetup(): ReactNode{
-    const { characters: players, setCharacters: setPlayers } = useCharacters("players")
+    const { characters: players, addCharacters, removeCharacters, updateCharacters } = useCharacters("players")
     const router = useRouter()
 
     const handleClick = useCallback(() => {
@@ -18,11 +18,11 @@ export default function PlayerSetup(): ReactNode{
     return (
     <div className={css.root}>
         <div className={css.playerContainer}>
-            {players.map((player) => (<AddPlayerCard key={player.id} player={player} setPlayers={setPlayers} />))}
-            <AddPlayerButton setPlayers={setPlayers} />
+            {players.map((player) => (<AddPlayerCard key={player.id} player={player} removeCharacters={removeCharacters} updateCharacters={updateCharacters} />))}
+            <AddPlayerButton addCharacters={addCharacters} />
         </div>
         <button onClick={handleClick} className={css.startButton}>
-            <h1>Start Game</h1>
+            <h1>Start Rolls</h1>
         </button>
     </div>
     )

@@ -1,37 +1,38 @@
 'use client'
-import { Dispatch, ReactNode, SetStateAction, useCallback, useState } from "react";
+import { ReactNode, useCallback, useState } from "react";
 import css from './add-player-card.module.scss'
-import Player from "@interfaces/player";
 import trashBin from '@assets/bin.png'
 import Image from 'next/image'
 import ImageModal from './image-modal/image-modal'
+import Character from "@interfaces/character";
 
 interface PlayerCardProps {
-    player: Player;
-    setPlayers: Dispatch<SetStateAction<Player[]>>;
+    player: Character;
+    removeCharacters: (id: string) => void;
+    updateCharacters: (id: string, changes: Partial<Character>) => void;
 }
 
 export default function AddPlayerCard(props: PlayerCardProps): ReactNode{
-    const {player, setPlayers} = props;
+    const {player, removeCharacters, updateCharacters} = props;
     const {name, image} = player
     const [showModal, setShowModal] = useState(false)
 
     const handleDelete = useCallback(() => {
-        setPlayers(prev => prev.filter(p => p.id !== player.id))
-    },[setPlayers, player.id])
+        removeCharacters(player.id)
+    },[removeCharacters, player.id])
 
     const handleNameChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-        setPlayers(prev => prev.map(p => p.id === player.id ? {...p, name: e.target.value} : p))
-    },[setPlayers, player.id])
+        updateCharacters(player.id, { name: e.target.value })
+    },[updateCharacters, player.id])
 
     const handleImageButtonClick = useCallback(() => {
         setShowModal(true)
     },[])
 
     const handleConfirmImage = useCallback((imageUrl: string) => {
-        setPlayers(prev => prev.map(p => p.id === player.id ? {...p, image: imageUrl} : p))
+        updateCharacters(player.id, { image: imageUrl })
         setShowModal(false)
-    },[setPlayers, player.id])
+    },[updateCharacters, player.id])
 
     return (
     <>
