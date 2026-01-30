@@ -2,7 +2,7 @@
 import { ReactNode, useState } from "react";
 import css from './enemy-select.module.scss'
 
-import useCharacters, { UseCharactersHook } from "@hooks/use-characters";
+import { UseCharactersHook } from "@hooks/use-characters";
 
 import enemyData from '@assets/enemyData.json'
 import EnemyJson from "@interfaces/enemy-json";

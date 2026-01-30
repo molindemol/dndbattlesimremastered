@@ -24,6 +24,7 @@ export default function EnemySelectCard(props: EnemySelectCardProps): ReactNode{
         addEnemy({
             id: crypto.randomUUID(),
             name: newName,
+            hp: enemy.hp,
             image: enemy.image,
             initiativeRoll: null,
             initiativeBonus: enemy.initiative,
