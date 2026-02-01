@@ -37,7 +37,7 @@ export default function AddPlayerCard(props: PlayerCardProps): ReactNode{
     return (
     <>
         <div className={css.root}>
-            <Image className={css.image} alt={`${name} image`} src={image} width={0} height={0} />
+            <Image className={css.image} alt={`${name} image`} src={image} width={2000} height={2000} />
             <input type="text" placeholder="name" value={name} onChange={handleNameChange} />
             <button onClick={handleImageButtonClick} className={css.imageButton}>Change Image</button>
             <button onClick={handleDelete} className={css.remove}><Image className={css.imageBin} alt="remove button" src={trashBin} /></button>

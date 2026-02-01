@@ -22,7 +22,7 @@ export default function RollCharacterCard(props: RollCharacterCardProps): ReactN
     return (
         <div className={css.root}>
             <div className={css.nameImgContainer}>
-                <Image className={css.image} alt={`${name} image`} src={image} width={0} height={0} />
+                <Image className={css.image} alt={`${name} image`} src={image} width={2000} height={2000} />
                 {name.length > 7 ? (<h2>{name}</h2>) : (<h1>{name}</h1>)}
             </div>
             <div className={css.numberInputContainer}>

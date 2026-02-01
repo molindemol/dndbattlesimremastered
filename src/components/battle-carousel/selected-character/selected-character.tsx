@@ -2,18 +2,17 @@
 'use client'
 import { useCallback, useEffect, useState } from 'react';
 import Character from '@interfaces/character';
-import css from './battle-card.module.scss'
+import css from './selected-character.module.scss'
 import Image from 'next/image';
 
-interface BattleCardProps{
+interface SelectedCharacterProps{
   character: Character;
   updateCharacters: (id: string, changes: Partial<Character>) => void;
   removeCharacters: (id: string) => void;
-  isSelected: boolean;
 }
 
-export default function BattleCard(props: BattleCardProps) {
-  const {character, updateCharacters, removeCharacters, isSelected } = props;
+export default function SelectedCharacter(props: SelectedCharacterProps) {
+  const {character, updateCharacters, removeCharacters } = props;
   const {id, name, image, ally, hp} = character
 
   const [currentHp, setCurrentHp] = useState<number>(hp ?? 0);
@@ -40,20 +39,18 @@ export default function BattleCard(props: BattleCardProps) {
   
 
   return (
-    <div className={css.root} style={{transform: isSelected ? 'translateY(-.9rem)' : ''}}>
-      <div>
+    <div className={css.root}>
         <Image className={css.image} alt={`${name} image`} src={image} width={2000} height={2000} />
-        <p style={{fontSize: name.length > 10 ? '10px' : ''}}>{name}</p>
-      </div>
-        
         <div className={css.bottom}>
+          {name.length > 15 ? (<h2>{name}</h2>) : ( <h1>{name}</h1>) }
+         
             {!ally && (
               <div className={css.health}>
                 <label>HP:</label>
                 <input type="number" min={0} value={currentHp} onChange={handleHpChange} />
               </div>
             )}
-            <button onClick={handleDead}>Dead</button>
+            
         </div>
     </div>
   );
