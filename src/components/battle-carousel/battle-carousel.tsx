@@ -21,6 +21,7 @@ export default function BattleCarousel() {
         (a.initiativeRoll! + a.initiativeBonus!) -
         (b.initiativeRoll! + b.initiativeBonus!)
     )
+  const isEmptyList = sortedListOfCharacters.length === 0;
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null)
 
   useEffect(() => {
@@ -29,7 +30,7 @@ export default function BattleCarousel() {
     }
   }, [sortedListOfCharacters, setSelectedCharacter, selectedCharacter, selectedIndex])
 
-  if (!selectedCharacter) return <EmptyState />
+  if (!selectedCharacter || isEmptyList) return <EmptyState />
 
   return (
     <div className={css.root}>
