@@ -1,0 +1,40 @@
+'use client'
+import { usePathname } from 'next/navigation';
+import NavigationOption from './navigation-option/navigation-option';
+import css from './navigation.module.scss'
+import { NAVIGATION_OPTIONS } from '@constants/navigation-options';
+import { useState } from 'react';
+
+
+export default function Navigation() {
+    const navigationOptions = NAVIGATION_OPTIONS;
+    const pathName = usePathname()
+    const activeOption = navigationOptions.find(option => option.href === pathName)
+    const filteredOptions = navigationOptions.filter(option => option !== activeOption)
+
+    const [showList, setShowList] = useState<boolean>(false)
+
+    return ( 
+        <div className={css.root} style={{height: showList ? '24rem' : ''}}>
+        
+            {activeOption && (
+                <button onClick={() => setShowList(!showList)} className={css.active}>
+                    <NavigationOption isActive={true} option={activeOption} />
+                </button>
+            )}
+            <div >
+                {filteredOptions.map((option) => (<div className={css.listItem} key={option.id}>
+                                <NavigationOption  isActive={false} option={option}/>
+                        </div>
+                    )
+                )} 
+            </div>
+            
+           
+                
+          
+            
+        </div>
+        
+    );
+}
